@@ -12,17 +12,22 @@ namespace GradingSystem
         {
             if (score < 0)
             {
-                Console.WriteLine("Error: Score is lower than zero" + score);
+                Console.WriteLine("Error: Score is lower than zero (" + score + ")");
             }
             else
+            
             {
+                if (score > 100)
+                    Console.WriteLine("Error : Score is over hundred(" + score + ")");
+                else
+
                 if (score >= 80 && score < 100)
                 {
                     Console.WriteLine("Grade: A (" + score + ")");
                 }
                 else
                 {
-                    if (score >= 70)
+                    if (score >= 70  )
                     {
                         Console.WriteLine("Grade: B (" + score + ")");
                     }
